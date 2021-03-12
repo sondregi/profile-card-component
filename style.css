@@ -25,7 +25,7 @@ body {
 
 h1, h2 {
     font-size: 1rem;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     font-weight: 700;
 }
 
@@ -33,14 +33,6 @@ span {
     font-size: 1rem;
     font-weight: 400;
     color: hsl(227, 10%, 46%);
-}
-
-.card-details span {
-    font-size: .750rem;
-}
-
-.card-details h2 {
-    padding-bottom: 0.5rem;
 }
 
 .card {
@@ -60,8 +52,15 @@ span {
     background-image: url("images/bg-pattern-card.svg");
 }
 
+.card-image img {
+    width: 95px;
+    border: 6px solid white;
+    border-radius: 50%;
+    margin-top: calc(-101px / 2);
+}
+
 .card-middle {
-    height: 145px;
+    height: 96px;
     border-bottom: 1px solid hsl(0, 0%, 59%);
 }
 
@@ -69,15 +68,17 @@ span {
     display: flex;
     min-height: 90px;
 }
-.col {
-    flex: 1;
+
+.card-details h2 {
+    padding-bottom: .5rem;
 }
 
-img {
-    width: 95px;
-    border: 6px solid white;
-    border-radius: 50%;
-    margin-top: calc(-101px / 2);
+.card-details span {
+    font-size: .750rem;
+}
+
+.col {
+    flex: 1;
 }
 
 .attribution {
